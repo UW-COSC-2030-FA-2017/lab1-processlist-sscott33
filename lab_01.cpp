@@ -76,8 +76,9 @@ int main()
 
 		// format output based on the quantity of numbers in the file (passed via counter)
 
-		switch (counter)
-		{
+		cout << endl;		// separate output from input when displayed
+
+		switch (counter) {
 		case 0:
 			cout << "The file is empty";
 			break;
@@ -91,6 +92,7 @@ int main()
 			cout << "The file contains only three numbers (in order of occurence): " << firstTwo[0] << ", " << firstTwo[1] << ", and " << lastTwo[0];
 			break;
 		default:	// four #s or more
+			cout << "The file contains " << counter << " numbers.\n";
 			cout << "The first two numbers are (in order of occurence): " << firstTwo[0] << " and " << firstTwo[1] << endl;
 			cout << "The last two numbers are (in order of occurence): " << lastTwo[1] << " and " << lastTwo[0];
 			break;
